@@ -1,0 +1,39 @@
+﻿<Window x:Class="fourth_lab.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:fourth_lab"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="349.434" Width="800">
+    <Grid Margin="0,0,0,1">
+        <Label Content="Basic Score" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="176"/>
+        <Label Content="Levels Count" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top" Width="176"/>
+        <Label Content="Added Obstacles" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top" Width="176"/>
+        <TextBox x:Name="BasicScore1" HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
+        <TextBox x:Name="LevelsCount1" HorizontalAlignment="Left" Height="23" Margin="10,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
+        <TextBox x:Name="Added1" HorizontalAlignment="Left" Height="23" Margin="10,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
+        <Label Content="Basic Score" HorizontalAlignment="Left" Margin="191,10,0,0" VerticalAlignment="Top" Width="176"/>
+        <Label Content="Levels Count" HorizontalAlignment="Left" Margin="191,64,0,0" VerticalAlignment="Top" Width="176"/>
+        <TextBox x:Name="BasicScore2" HorizontalAlignment="Left" Height="23" Margin="191,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
+        <TextBox x:Name="LevelsCount2" HorizontalAlignment="Left" Height="23" Margin="191,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
+        <TextBox x:Name="Added2" HorizontalAlignment="Left" Height="23" Margin="191,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
+        <Label Content="Basic Score" HorizontalAlignment="Left" Margin="372,10,0,0" VerticalAlignment="Top" Width="176"/>
+        <Label Content="Levels Count" HorizontalAlignment="Left" Margin="372,64,0,0" VerticalAlignment="Top" Width="176"/>
+        <TextBox x:Name="BasicScore3" HorizontalAlignment="Left" Height="23" Margin="372,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
+        <TextBox x:Name="LevelsCount3" HorizontalAlignment="Left" Height="23" Margin="372,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
+        <TextBox x:Name="Added3" HorizontalAlignment="Left" Height="23" Margin="372,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
+        <TextBox x:Name="Info" HorizontalAlignment="Left" Height="297" Margin="553,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="229"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="10,230,0,0" VerticalAlignment="Top" Width="176" Height="36" Click="AddMaze"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="191,230,0,0" VerticalAlignment="Top" Width="176" Height="36" Click="AddItemedMaze"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="372,230,0,0" VerticalAlignment="Top" Width="176" Height="36" Click="AddMonsteredItems"/>
+        <Button Content="Вывод" HorizontalAlignment="Left" Margin="10,271,0,0" VerticalAlignment="Top" Width="538" Height="36" Click="Output"/>
+        <Label Content="Added Items" HorizontalAlignment="Left" Margin="191,173,0,0" VerticalAlignment="Top" Width="176"/>
+        <TextBox x:Name="Items2" HorizontalAlignment="Left" Height="23" Margin="191,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
+        <Label Content="Added Monsters" HorizontalAlignment="Left" Margin="372,173,0,0" VerticalAlignment="Top" Width="176"/>
+        <TextBox x:Name="Monsters3" HorizontalAlignment="Left" Height="23" Margin="372,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176"/>
+        <Label Content="Added Obstacles" HorizontalAlignment="Left" Margin="191,118,0,0" VerticalAlignment="Top" Width="176"/>
+        <Label Content="Added Obstacles" HorizontalAlignment="Left" Margin="372,118,0,0" VerticalAlignment="Top" Width="176"/>
+
+    </Grid>
+</Window>

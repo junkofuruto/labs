@@ -1,0 +1,27 @@
+﻿<Window x:Class="lab47.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab47"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="360" Width="800">
+	<Grid>
+		<TextBox x:Name="setWeightTB1" HorizontalAlignment="Left" Height="43" Margin="190,10,0,0" TextWrapping="Wrap" Text="100" VerticalAlignment="Top" Width="158" RenderTransformOrigin="0.507,0.484" FontSize="28"/>
+		<Label x:Name="setWeightLabel1" Content="ВЕС ПЕРВОГО: " HorizontalAlignment="Left" Height="43" Margin="10,10,0,0" VerticalAlignment="Top" Width="175" FontSize="24"/>
+		<TextBox x:Name="setWeightTB2" HorizontalAlignment="Left" Height="43" Margin="190,58,0,0" TextWrapping="Wrap" Text="50" VerticalAlignment="Top" Width="158" RenderTransformOrigin="0.507,0.484" FontSize="28"/>
+		<Label x:Name="setWeightLabel2" Content="ВЕС ВТОРОГО: " HorizontalAlignment="Left" Height="43" Margin="10,58,0,0" VerticalAlignment="Top" Width="175" FontSize="24"/>
+		<TextBox x:Name="setWeightTB3" HorizontalAlignment="Left" Height="43" Margin="190,106,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="158" RenderTransformOrigin="0.507,0.484" FontSize="28"/>
+		<Label x:Name="setWeightLabel3" Content="ВЕС ТРЕТЬЕГО: " HorizontalAlignment="Left" Height="43" Margin="10,106,0,0" VerticalAlignment="Top" Width="175" FontSize="24"/>
+		<Button x:Name="setDataButton" Content="Присвоить данные" HorizontalAlignment="Left" Height="139" Margin="353,10,0,0" VerticalAlignment="Top" Width="429" FontSize="18" Click="SetData"/>
+		<TextBox x:Name="ingrDataTB" HorizontalAlignment="Left" Height="43" Margin="478,185,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" Width="304" RenderTransformOrigin="0.507,0.484" FontSize="28"/>
+		<TextBox x:Name="infoLabel" HorizontalAlignment="Left" Height="162" Margin="10,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="338"/>
+		<Label Content="Номер ингредиента" HorizontalAlignment="Left" Height="31" Margin="353,154,0,0" VerticalAlignment="Top" Width="120"/>
+		<Label Content="Значения для присваивания" HorizontalAlignment="Left" Height="31" Margin="478,154,0,0" VerticalAlignment="Top" Width="304"/>
+		<Button x:Name="fullWeghtButton" Content="Полный вес" HorizontalAlignment="Left" Height="83" Margin="353,233,0,0" VerticalAlignment="Top" Width="429" FontSize="18" Click="FullWeight" IsEnabled="False"/>
+		<Button x:Name="firstB" Content="1" HorizontalAlignment="Left" Margin="353,185,0,0" VerticalAlignment="Top" Width="36" Height="43" Click="ChangeFirst" IsEnabled="False"/>
+		<Button x:Name="secondB" Content="2" HorizontalAlignment="Left" Margin="395,185,0,0" VerticalAlignment="Top" Width="36" Height="43" Click="ChangeSecond" IsEnabled="False"/>
+		<Button x:Name="thirdB" Content="3" HorizontalAlignment="Left" Margin="437,185,0,0" VerticalAlignment="Top" Width="36" Height="43" Click="ChangeThird" IsEnabled="False"/>
+
+	</Grid>
+</Window>

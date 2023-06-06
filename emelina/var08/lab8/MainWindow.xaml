@@ -1,0 +1,26 @@
+﻿<Window x:Class="Castle.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Castle"
+        mc:Ignorable="d"
+        Title="Castle" Height="450" Width="800" Background="White">
+	<Grid x:Name="bg">
+		<Grid.Background>
+			<ImageBrush ImageSource="day.jpg"/>
+		</Grid.Background>
+		<Image x:Name="castle_img1" Margin="10,10,610,134" Source="castle.png" Stretch="Fill" Visibility="Hidden"/>
+		<Image x:Name="castle_img2" Margin="610,10,10,134" Source="castle.png" Stretch="Fill" Visibility="Hidden"/>
+		<TextBox x:Name="castle_name1" HorizontalAlignment="Left" Height="36" Margin="10,293,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="260" TextAlignment="Center" FontSize="24"/>
+		<TextBox x:Name="castle_money1" HorizontalAlignment="Left" Height="36" Margin="10,334,0,0" TextWrapping="Wrap" Text="10000" VerticalAlignment="Top" Width="260" TextAlignment="Center" FontSize="24"/>
+		<Button x:Name="remember" Content="ЗАПОМНИТЬ" HorizontalAlignment="Left" Height="34" Margin="10,375,0,0" VerticalAlignment="Top" Width="772" Click="Remember1"/>
+		<TextBox x:Name="castle_name2" HorizontalAlignment="Left" Height="36" Margin="522,293,0,0" TextWrapping="Wrap" Text="2" VerticalAlignment="Top" Width="260" TextAlignment="Center" FontSize="24"/>
+		<TextBox x:Name="castle_money2" HorizontalAlignment="Left" Height="36" Margin="522,334,0,0" TextWrapping="Wrap" Text="2000" VerticalAlignment="Top" Width="260" TextAlignment="Center" FontSize="24"/>
+		<TextBox x:Name="log" HorizontalAlignment="Left" Height="275" Margin="275,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="242" IsEnabled="False"/>
+		<Button x:Name="next_step_button" Content="Следующий ход" HorizontalAlignment="Left" Height="36" Margin="275,334,0,0" VerticalAlignment="Top" Width="242" Click="NextStep"/>
+		<Button x:Name="attack1" Content="Атака" HorizontalAlignment="Left" Height="77" Margin="10,293,0,0" VerticalAlignment="Top" Width="260" Click="Attack1" Visibility="Hidden"/>
+		<Button x:Name="attack2" Content="Атака" HorizontalAlignment="Left" Height="77" Margin="522,293,0,0" VerticalAlignment="Top" Width="260" Click="Attack2" Visibility="Hidden"/>
+		<Button x:Name="otchet_button" Content="Отчет" HorizontalAlignment="Left" Height="36" Margin="275,293,0,0" VerticalAlignment="Top" Width="242" Click="OtchetClick" IsEnabled="False"/>
+	</Grid>
+</Window>

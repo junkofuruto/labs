@@ -1,0 +1,54 @@
+﻿<Window x:Class="City5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:City5"
+        mc:Ignorable="d"
+        Title="прикольное название" Height="537" Width="760">
+	<Grid>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="416" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="237"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="416" Margin="252,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="237"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="416" Margin="494,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="237"/>
+        <Button Content="ВЫВОД" HorizontalAlignment="Left" Height="58" Margin="10,433,0,0" VerticalAlignment="Top" Width="721" Click="ShowInfo"/>
+        <TextBox x:Name="cityNameTB" ToolTip="Название города" HorizontalAlignment="Left" Height="36" Margin="19,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
+        <TextBox x:Name="citySquareTB" ToolTip="Площадь города" HorizontalAlignment="Left" Height="36" Margin="20,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
+        <TextBox x:Name="cityLivingCostTB" ToolTip="Цена проживания" HorizontalAlignment="Left" Height="36" Margin="19,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
+        <TextBox x:Name="cityPopulationTB" ToolTip="Плотность населения" HorizontalAlignment="Left" Height="36" Margin="19,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
+        <TextBox x:Name="cityAttrCountTB" ToolTip="Количество достопримечательностей" HorizontalAlignment="Left" Height="36" Margin="19,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
+        <TextBox x:Name="capitalNameTB" ToolTip="Название города" HorizontalAlignment="Left" Height="36" Margin="261,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
+        <TextBox x:Name="capitalSquareTB" ToolTip="Площадь города" HorizontalAlignment="Left" Height="34" Margin="261,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
+        <TextBox x:Name="capitalLivingCostTB" ToolTip="Цена проживания" HorizontalAlignment="Left" Height="36" Margin="261,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
+        <TextBox x:Name="capitalPopulationTB" ToolTip="Плотность населения" HorizontalAlignment="Left" Height="36" Margin="261,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
+        <TextBox x:Name="capitalAttrCountTB" ToolTip="Количество достопримечательностей" HorizontalAlignment="Left" Height="36" Margin="261,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
+        <TextBox x:Name="capitalMainSquare" ToolTip="Название главной площади" HorizontalAlignment="Left" Height="36" Margin="261,315,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
+        <TextBox x:Name="undergroundNameTB" ToolTip="Название города" HorizontalAlignment="Left" Height="36" Margin="504,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
+        <TextBox x:Name="undergroundSquareTB" ToolTip="Площадь города" HorizontalAlignment="Left" Height="34" Margin="504,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
+        <TextBox x:Name="undergroundLivingCostTB" ToolTip="Цена проживания" HorizontalAlignment="Left" Height="36" Margin="504,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
+        <TextBox x:Name="undergroundPopulationTB" ToolTip="Плотность населения" HorizontalAlignment="Left" Height="36" Margin="504,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
+        <TextBox x:Name="undergroundAttrCountTB" ToolTip="Количество достопримечательностей" HorizontalAlignment="Left" Height="36" Margin="504,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218"/>
+        <TextBox x:Name="undergroundLevelsCountTB" HorizontalAlignment="Left" Height="36" Margin="580,315,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" TextAlignment="Center" Text="0" FontSize="22" IsEnabled="False"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Height="54" Margin="19,358,0,0" VerticalAlignment="Top" Width="218" Click="AddCityToList"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Height="54" Margin="261,358,0,0" VerticalAlignment="Top" Width="218" Click="AddCapitalToList"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Height="54" Margin="504,358,0,0" VerticalAlignment="Top" Width="218" Click="AddUndergroundToList"/>
+        <Button x:Name="undergroundLevelsCountAddButton" ToolTip="Добавить кол-во уровней" Content="+" HorizontalAlignment="Left" Height="36" Margin="504,315,0,0" VerticalAlignment="Top" Width="33" Click="AddLevelsCount"/>
+        <Button x:Name="undergroundLevelsCountMinButton" ToolTip="Уменьшить кол-во уровней" Content="-" HorizontalAlignment="Left" Height="36" Margin="542,315,0,0" VerticalAlignment="Top" Width="33" Click="MinLevelsCount"/>
+        <Label Content="Название города" HorizontalAlignment="Left" Margin="19,10,0,0" VerticalAlignment="Top" Width="217"/>
+        <Label Content="Площадь города" HorizontalAlignment="Left" Margin="21,68,0,0" VerticalAlignment="Top" Width="217"/>
+        <Label Content="Цена проживания" HorizontalAlignment="Left" Margin="19,124,0,0" VerticalAlignment="Top" Width="217"/>
+        <Label Content="Плотность населения" HorizontalAlignment="Left" Margin="20,177,0,0" VerticalAlignment="Top" Width="217"/>
+        <Label Content="Количество достопримечательностей" HorizontalAlignment="Left" Margin="21,233,0,0" VerticalAlignment="Top" Width="217"/>
+        <Label Content="Название города" HorizontalAlignment="Left" Margin="259,10,0,0" VerticalAlignment="Top" Width="217"/>
+        <Label Content="Площадь города" HorizontalAlignment="Left" Margin="261,68,0,0" VerticalAlignment="Top" Width="217"/>
+        <Label Content="Цена проживания" HorizontalAlignment="Left" Margin="259,124,0,0" VerticalAlignment="Top" Width="217"/>
+        <Label Content="Плотность населения" HorizontalAlignment="Left" Margin="260,177,0,0" VerticalAlignment="Top" Width="217"/>
+        <Label Content="Количество достопримечательностей" HorizontalAlignment="Left" Margin="261,233,0,0" VerticalAlignment="Top" Width="217"/>
+        <Label Content="Название города" HorizontalAlignment="Left" Margin="502,10,0,0" VerticalAlignment="Top" Width="217"/>
+        <Label Content="Площадь города" HorizontalAlignment="Left" Margin="504,68,0,0" VerticalAlignment="Top" Width="217"/>
+        <Label Content="Цена проживания" HorizontalAlignment="Left" Margin="502,124,0,0" VerticalAlignment="Top" Width="217"/>
+        <Label Content="Плотность населения" HorizontalAlignment="Left" Margin="503,177,0,0" VerticalAlignment="Top" Width="217"/>
+        <Label Content="Количество достопримечательностей" HorizontalAlignment="Left" Margin="504,233,0,0" VerticalAlignment="Top" Width="217"/>
+        <Label Content="Название главной площади" HorizontalAlignment="Left" Margin="262,289,0,0" VerticalAlignment="Top" Width="217"/>
+        <Label Content="Количество уровней" HorizontalAlignment="Left" Margin="504,289,0,0" VerticalAlignment="Top" Width="217"/>
+    </Grid>
+</Window>

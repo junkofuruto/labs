@@ -1,0 +1,69 @@
+﻿<Window x:Class="lab47_4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab47_4"
+        mc:Ignorable="d"
+        Title="Лабораторная 4" Height="632.52" Width="1034">
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="524" Margin="11,10,0,0" VerticalAlignment="Top" Width="254"/>
+        <Label Content="РЕЦЕПТ" HorizontalAlignment="Left" Height="41" Margin="87,10,0,0" VerticalAlignment="Top" Width="102" FontSize="24"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="524" VerticalAlignment="Top" Width="254" Margin="275,10,0,0"/>
+        <Label Content="ВЫПЕЧКА" HorizontalAlignment="Left" Height="41" Margin="346,10,0,0" VerticalAlignment="Top" Width="120" FontSize="24"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="524" Margin="535,10,0,0" VerticalAlignment="Top" Width="255"/>
+        <Label Content="ВАРЕНЬЕ" HorizontalAlignment="Left" Height="41" Margin="608,9,0,0" VerticalAlignment="Top" Width="108" FontSize="24"/>
+
+        <Button Content="Info" HorizontalAlignment="Left" Height="53" Margin="10,539,0,0" VerticalAlignment="Top" Width="780" Click="OutputInfo"/>
+        <TextBox x:Name="infoTB" HorizontalAlignment="Left" Height="582" Margin="795,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="229"/>
+
+        <Label Content="ВЕС 1-го" HorizontalAlignment="Left" Height="38" Margin="11,66,0,0" VerticalAlignment="Top" Width="76" FontSize="16"/>
+        <Label Content="ВЕС 2-го" HorizontalAlignment="Left" Height="38" Margin="10,110,0,0" VerticalAlignment="Top" Width="77" FontSize="16"/>
+        <Label Content="ВЕС 3-го" HorizontalAlignment="Left" Height="38" Margin="10,153,0,0" VerticalAlignment="Top" Width="77" FontSize="16"/>
+        <TextBox x:Name="recipeWeight1" HorizontalAlignment="Left" Height="38" Margin="87,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" FontSize="16"/>
+        <TextBox x:Name="recipeWeight2" HorizontalAlignment="Left" Height="38" Margin="87,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" FontSize="16"/>
+        <TextBox x:Name="recipeWeight3" HorizontalAlignment="Left" Height="38" Margin="87,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" FontSize="16"/>
+
+        <Label Content="ВЕС 1-го" HorizontalAlignment="Left" Height="38" Margin="275,66,0,0" VerticalAlignment="Top" Width="76" FontSize="16"/>
+        <Label Content="ВЕС 2-го" HorizontalAlignment="Left" Height="38" Margin="275,110,0,0" VerticalAlignment="Top" Width="77" FontSize="16"/>
+        <Label Content="ВЕС 3-го" HorizontalAlignment="Left" Height="38" Margin="275,153,0,0" VerticalAlignment="Top" Width="77" FontSize="16"/>
+        <TextBox x:Name="bakeryWeight1" HorizontalAlignment="Left" Height="38" Margin="350,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" FontSize="16"/>
+        <TextBox x:Name="bakeryWeight2" HorizontalAlignment="Left" Height="38" Margin="350,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" FontSize="16"/>
+        <TextBox x:Name="bakeryWeight3" HorizontalAlignment="Left" Height="38" Margin="350,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" FontSize="16"/>
+
+        <Label Content="ВЕС 1-го" HorizontalAlignment="Left" Height="38" Margin="537,66,0,0" VerticalAlignment="Top" Width="76" FontSize="16"/>
+        <Label Content="ВЕС 2-го" HorizontalAlignment="Left" Height="38" Margin="537,110,0,0" VerticalAlignment="Top" Width="77" FontSize="16"/>
+        <Label Content="ВЕС 3-го" HorizontalAlignment="Left" Height="38" Margin="537,153,0,0" VerticalAlignment="Top" Width="77" FontSize="16"/>
+        <TextBox x:Name="jamWeight1" HorizontalAlignment="Left" Height="38" Margin="612,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" FontSize="16"/>
+        <TextBox x:Name="jamWeight2" HorizontalAlignment="Left" Height="38" Margin="612,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" FontSize="16"/>
+        <TextBox x:Name="jamWeight3" HorizontalAlignment="Left" Height="38" Margin="612,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" FontSize="16"/>
+        <Label Content="Время приготовления" HorizontalAlignment="Left" Height="33" Margin="26,196,0,0" VerticalAlignment="Top" Width="224" FontSize="16"/>
+        <TextBox x:Name="recipeCookTime" HorizontalAlignment="Left" Height="38" Margin="26,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="224" FontSize="16"/>
+        <Label Content="Темп. приготовления" HorizontalAlignment="Left" Height="33" Margin="288,196,0,0" VerticalAlignment="Top" Width="224" FontSize="16"/>
+        <TextBox x:Name="bakeryCookTime" HorizontalAlignment="Left" Height="38" Margin="288,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="224" FontSize="16"/>
+        <Label Content="Время варки" HorizontalAlignment="Left" Height="33" Margin="551,196,0,0" VerticalAlignment="Top" Width="224" FontSize="16"/>
+        <TextBox x:Name="jamBoilTime" HorizontalAlignment="Left" Height="38" Margin="551,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="224" FontSize="16"/>
+
+        <Button Content="Добавить" HorizontalAlignment="Left" Height="39" Margin="26,481,0,0" VerticalAlignment="Top" Width="224" Click="RecipeAdd"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Height="39" Margin="551,481,0,0" VerticalAlignment="Top" Width="224" Click="JamAdd"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Height="39" Margin="288,481,0,0" VerticalAlignment="Top" Width="224" RenderTransformOrigin="0.761,0.757" Click="BakeryAdd"/>
+        <Label Content="ИМЯ 1" HorizontalAlignment="Left" Height="38" Margin="11,293,0,0" VerticalAlignment="Top" Width="76" FontSize="16"/>
+        <Label Content="ИМЯ 2" HorizontalAlignment="Left" Height="38" Margin="10,337,0,0" VerticalAlignment="Top" Width="77" FontSize="16"/>
+        <Label Content="ИМЯ 3" HorizontalAlignment="Left" Height="38" Margin="10,380,0,0" VerticalAlignment="Top" Width="77" FontSize="16"/>
+        <TextBox x:Name="recipeName1" HorizontalAlignment="Left" Height="38" Margin="87,292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" FontSize="16"/>
+        <TextBox x:Name="recipeName2" HorizontalAlignment="Left" Height="38" Margin="87,336,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" FontSize="16"/>
+        <TextBox x:Name="recipeName3" HorizontalAlignment="Left" Height="38" Margin="87,380,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" FontSize="16"/>
+        <Label Content="ИМЯ 1" HorizontalAlignment="Left" Height="38" Margin="274,293,0,0" VerticalAlignment="Top" Width="76" FontSize="16"/>
+        <Label Content="ИМЯ 2" HorizontalAlignment="Left" Height="38" Margin="273,337,0,0" VerticalAlignment="Top" Width="77" FontSize="16"/>
+        <Label Content="ИМЯ 3" HorizontalAlignment="Left" Height="38" Margin="273,380,0,0" VerticalAlignment="Top" Width="77" FontSize="16"/>
+        <TextBox x:Name="bakeryName1" HorizontalAlignment="Left" Height="38" Margin="350,292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" FontSize="16"/>
+        <TextBox x:Name="bakeryName2" HorizontalAlignment="Left" Height="38" Margin="350,336,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" FontSize="16"/>
+        <TextBox x:Name="bakeryName3" HorizontalAlignment="Left" Height="38" Margin="350,380,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" FontSize="16"/>
+        <Label Content="ИМЯ 1" HorizontalAlignment="Left" Height="38" Margin="536,293,0,0" VerticalAlignment="Top" Width="76" FontSize="16"/>
+        <Label Content="ИМЯ 2" HorizontalAlignment="Left" Height="38" Margin="535,337,0,0" VerticalAlignment="Top" Width="77" FontSize="16"/>
+        <Label Content="ИМЯ 3" HorizontalAlignment="Left" Height="38" Margin="535,380,0,0" VerticalAlignment="Top" Width="77" FontSize="16"/>
+        <TextBox x:Name="jamName1" HorizontalAlignment="Left" Height="38" Margin="612,292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" FontSize="16"/>
+        <TextBox x:Name="jamName2" HorizontalAlignment="Left" Height="38" Margin="612,336,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" FontSize="16"/>
+        <TextBox x:Name="jamName3" HorizontalAlignment="Left" Height="38" Margin="612,380,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="163" FontSize="16"/>
+    </Grid>
+</Window>

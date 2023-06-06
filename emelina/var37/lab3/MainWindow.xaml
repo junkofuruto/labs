@@ -1,0 +1,39 @@
+﻿<Window x:Class="lab37.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab37"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="523.18" Width="800">
+	<Grid>
+		<TextBox x:Name="Alien1Name" HorizontalAlignment="Left" Height="32" Margin="10,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Text="Пришелец 1" FontSize="20"/>
+		<Label Content="Имя" HorizontalAlignment="Left" Height="30" Margin="10,10,0,0" VerticalAlignment="Top" Width="234"/>
+		<TextBox x:Name="Alien2Name" HorizontalAlignment="Left" Height="32" Margin="548,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Text="Пришелец 2" FontSize="20"/>
+		<Label Content="Имя" HorizontalAlignment="Left" Height="30" Margin="548,10,0,0" VerticalAlignment="Top" Width="234"/>
+		<TextBox x:Name="MinHeight1" HorizontalAlignment="Left" Height="32" Margin="10,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Text="200" FontSize="20"/>
+		<Label Content="Минимальный рост" HorizontalAlignment="Left" Height="30" Margin="10,142,0,0" VerticalAlignment="Top" Width="234"/>
+		<TextBox x:Name="MaxHeight1" HorizontalAlignment="Left" Height="32" Margin="10,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Text="250" FontSize="20"/>
+		<Label Content="Максимальный рост" HorizontalAlignment="Left" Height="30" Margin="10,208,0,0" VerticalAlignment="Top" Width="234"/>
+		<TextBox x:Name="MinHeight2" HorizontalAlignment="Left" Height="32" Margin="548,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Text="180" FontSize="20"/>
+		<Label Content="Минимальный рост" HorizontalAlignment="Left" Height="30" Margin="548,142,0,0" VerticalAlignment="Top" Width="234"/>
+		<TextBox x:Name="MaxHeight2" HorizontalAlignment="Left" Height="32" Margin="548,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Text="220" FontSize="20"/>
+		<Label Content="Максимальный рост" HorizontalAlignment="Left" Height="30" Margin="548,208,0,0" VerticalAlignment="Top" Width="234"/>
+		<TextBox x:Name="MinOtkl1" HorizontalAlignment="Left" Height="32" Margin="10,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Text="100" FontSize="20"/>
+		<Label Content="Отклонение мин." HorizontalAlignment="Left" Height="30" Margin="10,274,0,0" VerticalAlignment="Top" Width="234"/>
+		<TextBox x:Name="MaxOtkl1" HorizontalAlignment="Left" Height="32" Margin="10,369,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Text="300" FontSize="20"/>
+		<Label Content="Отклонение макс" HorizontalAlignment="Left" Height="30" Margin="10,340,0,0" VerticalAlignment="Top" Width="234"/>
+		<TextBox x:Name="MinOtkl2" HorizontalAlignment="Left" Height="32" Margin="548,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Text="150" FontSize="20"/>
+		<Label Content="Отклонение мин." HorizontalAlignment="Left" Height="30" Margin="548,274,0,0" VerticalAlignment="Top" Width="234"/>
+		<TextBox x:Name="MaxOtkl2" HorizontalAlignment="Left" Height="32" Margin="548,369,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Text="400" FontSize="20"/>
+		<Label Content="Отклонение макс" HorizontalAlignment="Left" Height="30" Margin="548,340,0,0" VerticalAlignment="Top" Width="234"/>
+		<Button x:Name="firstDataButton" Content="Данные" HorizontalAlignment="Left" Height="69" Margin="10,406,0,0" VerticalAlignment="Top" Width="234" Click="Alien1DataClick"/>
+		<TextBox x:Name="infoTB" HorizontalAlignment="Left" Height="362" Margin="249,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="294" FontSize="20"/>
+		<Button x:Name="secondDataButton" Content="Данные" HorizontalAlignment="Left" Height="69" Margin="548,406,0,0" VerticalAlignment="Top" Width="234" Click="Alien2DataClick"/>
+		<Button x:Name="infoButton" Content="Отклонение" HorizontalAlignment="Left" Height="69" Margin="249,406,0,0" VerticalAlignment="Top" Width="294" Click="OtklClick"/>
+		<TextBox x:Name="Alien1Planet" HorizontalAlignment="Left" Height="32" Margin="10,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Text="фыв" FontSize="20"/>
+		<Label Content="Планета" HorizontalAlignment="Left" Height="30" Margin="10,76,0,0" VerticalAlignment="Top" Width="234"/>
+		<TextBox x:Name="Alien2Planet" HorizontalAlignment="Left" Height="32" Margin="548,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Text="ффф" FontSize="20"/>
+		<Label Content="Планета" HorizontalAlignment="Left" Height="30" Margin="548,76,0,0" VerticalAlignment="Top" Width="234"/>
+	</Grid>
+</Window>

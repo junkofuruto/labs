@@ -1,0 +1,32 @@
+﻿<Window x:Class="lab1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab1"
+        mc:Ignorable="d"
+        Title="Блюдо" Height="465" Width="315">
+	<Grid>
+		<Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="231" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="278"/>
+		<Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="168" Margin="10,246,0,0" Stroke="Black" VerticalAlignment="Top" Width="278"/>
+		<Label Content="Название блюда:" HorizontalAlignment="Left" Height="30" Margin="10,20,0,0" VerticalAlignment="Top" Width="114"/>
+		<TextBox x:Name="dishNameTB" HorizontalAlignment="Left" Height="30" Margin="129,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+		<Label Content="Вес блюда:" HorizontalAlignment="Left" Height="30" Margin="10,55,0,0" VerticalAlignment="Top" Width="114"/>
+		<TextBox x:Name="dishWeightTB" HorizontalAlignment="Left" Height="30" Margin="129,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+		<Label Content="Калор. блюда:" HorizontalAlignment="Left" Height="30" Margin="10,90,0,0" VerticalAlignment="Top" Width="114"/>
+		<TextBox x:Name="dishCaloryTB" HorizontalAlignment="Left" Height="30" Margin="129,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+		<Label Content="Цена блюда:" HorizontalAlignment="Left" Height="30" Margin="10,125,0,0" VerticalAlignment="Top" Width="114"/>
+		<TextBox x:Name="dishPriceTB" HorizontalAlignment="Left" Height="30" Margin="129,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+		<Label Content="Упражнение:" HorizontalAlignment="Left" Height="30" Margin="10,160,0,0" VerticalAlignment="Top" Width="114"/>
+		<TextBox x:Name="workoutTB" HorizontalAlignment="Left" Height="30" Margin="129,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+		<Button Content="Даные" HorizontalAlignment="Left" Height="33" Margin="20,198,0,0" VerticalAlignment="Top" Width="259" Click="DataClick"/>
+		<Label Content="Вес человека:" HorizontalAlignment="Left" Height="30" Margin="10,255,0,0" VerticalAlignment="Top" Width="114"/>
+		<TextBox x:Name="humanWeightTB" HorizontalAlignment="Left" Height="30" Margin="129,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+		<Button x:Name="workoutButton" Content="Упражнение" HorizontalAlignment="Left" Height="33" Margin="20,290,0,0" VerticalAlignment="Top" Width="259" Click="WorkoutClick" IsEnabled="False"/>
+		<Button x:Name="eatButton" Content="Есть" HorizontalAlignment="Left" Height="33" Margin="20,328,0,0" VerticalAlignment="Top" Width="259" Click="EatClick" IsEnabled="False"/>
+		<Button x:Name="totalMoneyButton" Content="Сумма денег" HorizontalAlignment="Left" Height="33" Margin="20,366,0,0" VerticalAlignment="Top" Width="259" Click="MoneyClick" IsEnabled="False"/>
+
+
+
+	</Grid>
+</Window>

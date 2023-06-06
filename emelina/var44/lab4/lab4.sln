@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab4", "lab4.csproj", "{6FF9A0E1-7563-4F97-A1EF-A95D66645A0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lib3_dll", "..\lib3_dll\lib3_dll.csproj", "{0A410F60-3734-4493-A0D1-A0397C94925D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FF9A0E1-7563-4F97-A1EF-A95D66645A0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FF9A0E1-7563-4F97-A1EF-A95D66645A0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FF9A0E1-7563-4F97-A1EF-A95D66645A0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FF9A0E1-7563-4F97-A1EF-A95D66645A0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A410F60-3734-4493-A0D1-A0397C94925D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A410F60-3734-4493-A0D1-A0397C94925D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A410F60-3734-4493-A0D1-A0397C94925D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A410F60-3734-4493-A0D1-A0397C94925D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E58EEBB-A6D9-4EB7-93B1-61DE7E93C042}
+	EndGlobalSection
+EndGlobal

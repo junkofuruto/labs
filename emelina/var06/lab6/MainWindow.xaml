@@ -1,0 +1,69 @@
+﻿<Window x:Class="lab6_6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab6_6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="539.541" Width="941.199">
+    <Grid x:Name="background">
+        <ComboBox x:Name="themeCB" HorizontalAlignment="Left" Margin="9,11,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0" SelectionChanged="ThemeChanged" Background="Black">
+            <Label Content="Зеленая"/>
+            <Label Content="Красная"/>
+            <Label Content="Синяя"/>
+        </ComboBox>
+        <ComboBox x:Name="impCB" HorizontalAlignment="Left" Margin="9,38,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0">
+            <Label Content="Свет"/>
+            <Label Content="Тьма"/>
+            <Label Content="Огонь"/>
+            <Label Content="Вода"/>
+            <Label Content="Воздух"/>
+        </ComboBox>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="469" Margin="135,17,0,-67" Stroke="Black" VerticalAlignment="Top" Width="253"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="469" Margin="393,17,0,-67" Stroke="Black" VerticalAlignment="Top" Width="254"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="469" Margin="652,17,-113,-67" Stroke="Black" VerticalAlignment="Top" Width="253"/>
+        <Button Content="Купить" HorizontalAlignment="Left" Margin="146,424,0,-51" VerticalAlignment="Top" Width="230" Height="46" Click="BuyArtifact"/>
+        <Button Content="Купить" HorizontalAlignment="Left" Margin="405,424,0,-51" VerticalAlignment="Top" Width="230" Height="46" Click="BuySword"/>
+        <Button Content="Купить" HorizontalAlignment="Left" Margin="664,424,-102,-51" VerticalAlignment="Top" Width="230" Height="46" Click="BuyRing"/>
+        <Label Content="Название артефакта" HorizontalAlignment="Left" Margin="146,28,0,0" VerticalAlignment="Top" Width="230"/>
+        <TextBox x:Name="artName" HorizontalAlignment="Left" Height="23" Margin="146,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <Label Content="Цена артефакта" HorizontalAlignment="Left" Margin="146,82,0,0" VerticalAlignment="Top" Width="230"/>
+        <TextBox x:Name="artPrice" HorizontalAlignment="Left" Height="23" Margin="146,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <Label Content="Прирост урона" HorizontalAlignment="Left" Margin="146,137,0,0" VerticalAlignment="Top" Width="230"/>
+        <TextBox x:Name="artDamageInc" HorizontalAlignment="Left" Height="23" Margin="146,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <Label Content="Прирост здоровья" HorizontalAlignment="Left" Margin="146,193,0,0" VerticalAlignment="Top" Width="230"/>
+        <TextBox x:Name="artHealthInc" HorizontalAlignment="Left" Height="23" Margin="146,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <Label Content="Прирост защиты" HorizontalAlignment="Left" Margin="146,249,0,0" VerticalAlignment="Top" Width="230"/>
+        <TextBox x:Name="artDefenceInc" HorizontalAlignment="Left" Height="23" Margin="146,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <Label Content="Скидка" HorizontalAlignment="Left" Margin="146,305,0,0" VerticalAlignment="Top" Width="230"/>
+        <TextBox x:Name="artDiscount" HorizontalAlignment="Left" Height="23" Margin="146,336,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <Label Content="Название артефакта" HorizontalAlignment="Left" Margin="405,28,0,0" VerticalAlignment="Top" Width="230"/>
+        <TextBox x:Name="swordName" HorizontalAlignment="Left" Height="23" Margin="405,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <Label Content="Цена артефакта" HorizontalAlignment="Left" Margin="405,82,0,0" VerticalAlignment="Top" Width="230"/>
+        <TextBox x:Name="swordPrice" HorizontalAlignment="Left" Height="23" Margin="405,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <Label Content="Прирост урона" HorizontalAlignment="Left" Margin="405,137,0,0" VerticalAlignment="Top" Width="230"/>
+        <TextBox x:Name="swordDamageInc" HorizontalAlignment="Left" Height="23" Margin="405,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <Label Content="Прирост здоровья" HorizontalAlignment="Left" Margin="405,193,0,0" VerticalAlignment="Top" Width="230"/>
+        <TextBox x:Name="swordHealthInc" HorizontalAlignment="Left" Height="23" Margin="405,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <Label Content="Прирост защиты" HorizontalAlignment="Left" Margin="405,249,0,0" VerticalAlignment="Top" Width="230"/>
+        <TextBox x:Name="swordDefenceInc" HorizontalAlignment="Left" Height="23" Margin="405,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <Label Content="Скидка" HorizontalAlignment="Left" Margin="405,305,0,0" VerticalAlignment="Top" Width="230"/>
+        <TextBox x:Name="swordDiscount" HorizontalAlignment="Left" Height="23" Margin="405,336,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <Label Content="Название артефакта" HorizontalAlignment="Left" Margin="664,28,-102,0" VerticalAlignment="Top" Width="230"/>
+        <TextBox x:Name="ringName" HorizontalAlignment="Left" Height="23" Margin="664,59,-102,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <Label Content="Цена артефакта" HorizontalAlignment="Left" Margin="664,82,-102,0" VerticalAlignment="Top" Width="230"/>
+        <TextBox x:Name="ringPrice" HorizontalAlignment="Left" Height="23" Margin="664,113,-102,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <Label Content="Прирост урона" HorizontalAlignment="Left" Margin="664,137,-102,0" VerticalAlignment="Top" Width="230"/>
+        <TextBox x:Name="ringDamageInc" HorizontalAlignment="Left" Height="23" Margin="664,168,-102,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <Label Content="Прирост здоровья" HorizontalAlignment="Left" Margin="664,193,-102,0" VerticalAlignment="Top" Width="230"/>
+        <TextBox x:Name="ringHealthInc" HorizontalAlignment="Left" Height="23" Margin="664,224,-102,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <Label Content="Прирост защиты" HorizontalAlignment="Left" Margin="664,249,-102,0" VerticalAlignment="Top" Width="230"/>
+        <TextBox x:Name="ringDefenceInc" HorizontalAlignment="Left" Height="23" Margin="664,280,-102,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <Label Content="Скидка" HorizontalAlignment="Left" Margin="664,305,-102,0" VerticalAlignment="Top" Width="230"/>
+        <TextBox x:Name="ringDiscount" HorizontalAlignment="Left" Height="23" Margin="664,336,-102,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <Label Content="Название меча" HorizontalAlignment="Left" Margin="405,365,0,0" VerticalAlignment="Top" Width="230"/>
+        <TextBox x:Name="swordName1" HorizontalAlignment="Left" Height="23" Margin="405,396,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+        <Label Content="Материал кольца" HorizontalAlignment="Left" Margin="664,365,-102,0" VerticalAlignment="Top" Width="230"/>
+        <TextBox x:Name="ringMaterial" HorizontalAlignment="Left" Height="23" Margin="664,396,-102,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+    </Grid>
+</Window>

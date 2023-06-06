@@ -1,0 +1,45 @@
+﻿<Window x:Class="lab8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab8"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="364.806" Width="621.966">
+	<Grid>
+		<Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="150" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="479"/>
+		<Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="150" Margin="10,165,0,0" Stroke="Black" VerticalAlignment="Top" Width="479"/>
+
+		<TextBox x:Name="messageTB1" HorizontalAlignment="Left" Height="128" Margin="129,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350"/>
+		<TextBox x:Name="messageTB2" HorizontalAlignment="Left" Height="128" Margin="129,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350"/>
+
+		<TextBox x:Name="secretTB1" HorizontalAlignment="Left" Height="128" Margin="129,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="279" Visibility="Hidden"/>
+		<TextBox x:Name="secretTB2" HorizontalAlignment="Left" Height="128" Margin="129,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="279" Visibility="Hidden"/>
+		<Button x:Name="secretLevelMin2" Content="-" HorizontalAlignment="Left" Height="25" Margin="413,248,0,0" VerticalAlignment="Top" Width="66" Visibility="Hidden"/>
+		<Button x:Name="secretLevelAdd2" Content="+" HorizontalAlignment="Left" Height="25" Margin="413,278,0,0" VerticalAlignment="Top" Width="66" Visibility="Hidden"/>
+		<Label x:Name="secretLevelLabel2" Content="0" HorizontalAlignment="Left" Margin="427,179,0,0" VerticalAlignment="Top" Height="64" Width="30" FontSize="36" FontFamily="Yu Gothic UI Semibold" FontWeight="Bold" Visibility="Hidden"/>
+		<Button x:Name="secretLevelMin1" Content="-" HorizontalAlignment="Left" Height="25" Margin="413,94,0,0" VerticalAlignment="Top" Width="66" Visibility="Hidden"/>
+		<Button x:Name="secretLevelAdd1" Content="+" HorizontalAlignment="Left" Height="25" Margin="413,124,0,0" VerticalAlignment="Top" Width="66" Visibility="Hidden"/>
+		<Label x:Name="secretLevelLabel1" Content="0" HorizontalAlignment="Left" Margin="427,25,0,0" VerticalAlignment="Top" Height="64" Width="30" FontSize="36" FontFamily="Yu Gothic UI Semibold" FontWeight="Bold" Visibility="Hidden"/>
+
+
+		<TextBox x:Name="wordTB1" HorizontalAlignment="Left" Height="128" Margin="129,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" Visibility="Hidden"/>
+		<TextBox x:Name="wordTB2" HorizontalAlignment="Left" Height="128" Margin="129,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" Visibility="Hidden"/>
+		<TextBox x:Name="synonymTB1" HorizontalAlignment="Left" Height="128" Margin="304,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Visibility="Hidden"/>
+		<TextBox x:Name="synonymTB2" HorizontalAlignment="Left" Height="128" Margin="304,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" Visibility="Hidden"/>
+
+		<Button Content="Рассчитать" HorizontalAlignment="Left" Height="305" Margin="494,10,0,0" VerticalAlignment="Top" Width="95" Click="CalcLevDist"/>
+		<ComboBox x:Name="msgCB1" HorizontalAlignment="Left" Margin="19,22,0,0" VerticalAlignment="Top" Width="105" SelectedIndex="0" SelectionChanged="msgCB1_SelectionChanged">
+			<Label Content="Сообщение"/>
+			<Label Content="Секрет"/>
+			<Label Content="Синоним"/>
+		</ComboBox>
+
+		<ComboBox x:Name="msgCB2" HorizontalAlignment="Left" Margin="19,175,0,0" VerticalAlignment="Top" Width="105" SelectedIndex="0" SelectionChanged="msgCB2_SelectionChanged">
+			<Label Content="Сообщение"/>
+			<Label Content="Секрет"/>
+			<Label Content="Синоним"/>
+		</ComboBox>
+		
+	</Grid>
+</Window>

@@ -1,0 +1,63 @@
+﻿<Window x:Class="City4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:City4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="720" Width="1028.889">
+	<Grid>
+		<Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="316" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="331"/>
+		<Label Content="Название города" HorizontalAlignment="Left" Height="38" Margin="10,24,0,0" VerticalAlignment="Top" Width="183" FontSize="20"/>
+		<TextBox HorizontalAlignment="Left" Height="37" Margin="198,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="24"/>
+		<Grid HorizontalAlignment="Left" Height="100" Margin="250,34,0,0" VerticalAlignment="Top" Width="100"/>
+		<Label Content="Площадь" HorizontalAlignment="Left" Height="38" Margin="10,66,0,0" VerticalAlignment="Top" Width="183" FontSize="20"/>
+		<TextBox HorizontalAlignment="Left" Height="37" Margin="198,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="24"/>
+		<Label Content="Цена проживания" HorizontalAlignment="Left" Height="38" Margin="10,108,0,0" VerticalAlignment="Top" Width="183" FontSize="20"/>
+		<TextBox HorizontalAlignment="Left" Height="37" Margin="198,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="24"/>
+		<Label Content="Кол-во населения" HorizontalAlignment="Left" Height="38" Margin="10,150,0,0" VerticalAlignment="Top" Width="183" FontSize="20"/>
+		<TextBox HorizontalAlignment="Left" Height="37" Margin="198,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="24"/>
+		<Label Content="Кол-во дост-ей" HorizontalAlignment="Left" Height="38" Margin="10,192,0,0" VerticalAlignment="Top" Width="183" FontSize="20"/>
+		<TextBox HorizontalAlignment="Left" Height="37" Margin="198,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="24"/>
+		<Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="316" Margin="346,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="331"/>
+		<Label Content="Название города" HorizontalAlignment="Left" Height="38" Margin="10,24,0,0" VerticalAlignment="Top" Width="183" FontSize="20"/>
+		<TextBox x:Name="CityName" HorizontalAlignment="Left" Height="37" Margin="198,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="24" Text="Хабаровск"/>
+		<Label Content="Площадь" HorizontalAlignment="Left" Height="38" Margin="10,66,0,0" VerticalAlignment="Top" Width="183" FontSize="20"/>
+		<TextBox x:Name="CitySquare" HorizontalAlignment="Left" Height="37" Margin="198,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="24" Text="134"/>
+		<Label Content="Цена проживания" HorizontalAlignment="Left" Height="38" Margin="10,108,0,0" VerticalAlignment="Top" Width="183" FontSize="20"/>
+		<TextBox x:Name="CityLivingCost" HorizontalAlignment="Left" Height="37" Margin="198,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="24" Text="1232"/>
+		<Label Content="Кол-во населения" HorizontalAlignment="Left" Height="38" Margin="10,150,0,0" VerticalAlignment="Top" Width="183" FontSize="20"/>
+		<TextBox x:Name="CityPopulation" HorizontalAlignment="Left" Height="37" Margin="198,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="24" Text="233"/>
+		<Label Content="Кол-во дост-ей" HorizontalAlignment="Left" Height="38" Margin="10,192,0,0" VerticalAlignment="Top" Width="183" FontSize="20"/>
+		<TextBox x:Name="CityAttrCount" HorizontalAlignment="Left" Height="37" Margin="198,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="24" Text="123"/>
+		<Label Content="Название города" HorizontalAlignment="Left" Height="38" Margin="347,24,0,0" VerticalAlignment="Top" Width="183" FontSize="20"/>
+		<TextBox x:Name="CapitalName" HorizontalAlignment="Left" Height="37" Margin="535,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="24" Text="Воркута"/>
+		<Label Content="Площадь" HorizontalAlignment="Left" Height="38" Margin="347,66,0,0" VerticalAlignment="Top" Width="183" FontSize="20"/>
+		<TextBox x:Name="CapitalSquare" HorizontalAlignment="Left" Height="37" Margin="535,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="24" Text="1234"/>
+		<Label Content="Цена проживания" HorizontalAlignment="Left" Height="38" Margin="347,108,0,0" VerticalAlignment="Top" Width="183" FontSize="20"/>
+		<TextBox x:Name="CapitalLivingCost" HorizontalAlignment="Left" Height="37" Margin="535,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="24" Text="3454"/>
+		<Label Content="Кол-во населения" HorizontalAlignment="Left" Height="38" Margin="347,150,0,0" VerticalAlignment="Top" Width="183" FontSize="20"/>
+		<TextBox x:Name="CapitalPopulation" HorizontalAlignment="Left" Height="37" Margin="535,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="24" Text="234"/>
+		<Label Content="Кол-во дост-ей" HorizontalAlignment="Left" Height="38" Margin="347,192,0,0" VerticalAlignment="Top" Width="183" FontSize="20"/>
+		<TextBox x:Name="CapitalAttrCount" HorizontalAlignment="Left" Height="37" Margin="535,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="24" Text="22"/>
+		<Label Content="Главная площадь" HorizontalAlignment="Left" Height="38" Margin="347,234,0,0" VerticalAlignment="Top" Width="183" FontSize="20"/>
+		<TextBox x:Name="CapitalMainSquare" HorizontalAlignment="Left" Height="37" Margin="535,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="24" Text="абв"/>
+		<Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="316" Margin="682,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="331"/>
+		<Label Content="Название города" HorizontalAlignment="Left" Height="38" Margin="680,24,0,0" VerticalAlignment="Top" Width="183" FontSize="20"/>
+		<TextBox x:Name="UndergroundName" HorizontalAlignment="Left" Height="37" Margin="868,25,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="24" Text="Тосва"/>
+		<Label Content="Площадь" HorizontalAlignment="Left" Height="38" Margin="680,66,0,0" VerticalAlignment="Top" Width="183" FontSize="20"/>
+		<TextBox x:Name="UndergroundSquare" HorizontalAlignment="Left" Height="37" Margin="868,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="24" Text="12334"/>
+		<Label Content="Цена проживания" HorizontalAlignment="Left" Height="38" Margin="680,108,0,0" VerticalAlignment="Top" Width="183" FontSize="20"/>
+		<TextBox x:Name="UndergroundLivingCost" HorizontalAlignment="Left" Height="37" Margin="868,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="24" Text="322"/>
+		<Label Content="Кол-во населения" HorizontalAlignment="Left" Height="38" Margin="680,150,0,0" VerticalAlignment="Top" Width="183" FontSize="20"/>
+		<TextBox x:Name="UndergroundPopulation" HorizontalAlignment="Left" Height="37" Margin="868,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="24" Text="1377"/>
+		<Label Content="Кол-во дост-ей" HorizontalAlignment="Left" Height="38" Margin="680,192,0,0" VerticalAlignment="Top" Width="183" FontSize="20"/>
+		<TextBox x:Name="UndergroundAttrCount" HorizontalAlignment="Left" Height="37" Margin="868,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" FontSize="24" Text="123"/>
+		<Button Content="Добавить" HorizontalAlignment="Left" Height="38" Margin="357,277,0,0" VerticalAlignment="Top" Width="311" Click="CapitalAdd"/>
+		<Button Content="Добавить" HorizontalAlignment="Left" Height="38" Margin="20,277,0,0" VerticalAlignment="Top" Width="311" Click="CityAdd"/>
+		<Button Content="Добавить" HorizontalAlignment="Left" Height="38" Margin="690,277,0,0" VerticalAlignment="Top" Width="311" Click="UndergroundAdd"/>
+		<Button Content="+1 Уровень" HorizontalAlignment="Left" Height="38" Margin="690,235,0,0" VerticalAlignment="Top" Width="311" Click="UndergroundAddLevel"/>
+		<TextBox x:Name="infoTB" HorizontalAlignment="Left" Height="348" Margin="10,331,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="853"/>
+		<Button Content="Информация в списке" HorizontalAlignment="Left" Height="348" Margin="868,331,0,0" VerticalAlignment="Top" Width="143" Click="InfoGen"/>
+	</Grid>
+</Window>

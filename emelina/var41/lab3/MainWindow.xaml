@@ -1,0 +1,28 @@
+﻿<Window x:Class="lab3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="302.549" Width="549.943">
+	<Grid>
+		<Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="241" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="333"/>
+		<Label Content="Название" HorizontalAlignment="Left" Height="30" Margin="18,18,0,0" VerticalAlignment="Top" Width="79"/>
+		<Label Content="Объем" HorizontalAlignment="Left" Height="30" Margin="18,90,0,0" VerticalAlignment="Top" Width="79"/>
+		<Label Content="Вес" HorizontalAlignment="Left" Height="30" Margin="18,55,0,0" VerticalAlignment="Top" Width="79"/>
+		<TextBox x:Name="nameTB" HorizontalAlignment="Left" Height="30" Margin="102,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+		<TextBox x:Name="volumeTB" HorizontalAlignment="Left" Height="30" Margin="102,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+		<TextBox x:Name="weightTB" HorizontalAlignment="Left" Height="30" Margin="102,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+		<Button x:Name="dataButton" Content="Данные" HorizontalAlignment="Left" Height="30" Margin="18,125,0,0" VerticalAlignment="Top" Width="232" Click="SetData"/>
+		<Button x:Name="nameButton" Content="Название" HorizontalAlignment="Left" Height="30" Margin="255,18,0,0" VerticalAlignment="Top" Width="78" IsEnabled="False" Click="RenameClick"/>
+		<Button x:Name="weightButton" Content="Вес" HorizontalAlignment="Left" Height="32" Margin="255,53,0,0" VerticalAlignment="Top" Width="78" IsEnabled="False" Click="ReweightClick"/>
+		<TextBox x:Name="infoTB" HorizontalAlignment="Left" Height="81" Margin="18,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="315"/>
+		<Button x:Name="infoButton" Content="Инфо" HorizontalAlignment="Left" Height="65" Margin="255,90,0,0" VerticalAlignment="Top" Width="78" IsEnabled="False" Click="GetInfo"/>
+        <Button x:Name="a" Content="+10%" HorizontalAlignment="Left" Margin="348,10,0,0" VerticalAlignment="Top" Width="75" Click="a_Click"/>
+        <Button x:Name="b" Content="-20%" HorizontalAlignment="Left" Margin="348,35,0,0" VerticalAlignment="Top" Width="75" Click="b_Click"/>
+        <Button x:Name="d" Content="Плотность" HorizontalAlignment="Left" Margin="348,60,0,0" VerticalAlignment="Top" Width="75" Click="d_Click"/>
+        <TextBox x:Name="dens" HorizontalAlignment="Left" Height="23" Margin="348,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>

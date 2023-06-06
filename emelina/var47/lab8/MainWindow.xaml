@@ -1,0 +1,26 @@
+﻿<Window x:Class="lab47_8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab47_8"
+        mc:Ignorable="d"
+        Title="Лучшая программа эвер" Height="338" Width="633">
+    <Grid>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="278" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="168"/>
+        <TextBox x:Name="ingrWeight" HorizontalAlignment="Left" Height="30" Margin="18,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153" Text="100" FontSize="20"/>
+        <Label Content="Вес ингредиента" HorizontalAlignment="Left" Margin="18,17,0,0" VerticalAlignment="Top" Width="153"/>
+        <TextBox x:Name="ingrName" HorizontalAlignment="Left" Height="30" Margin="18,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153" Text="Помидоры" FontSize="20"/>
+        <Label Content="Название ингредиента" HorizontalAlignment="Left" Margin="18,83,0,0" VerticalAlignment="Top" Width="153"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="18,149,0,0" VerticalAlignment="Top" Width="153" Height="40" Click="AddIngridient"/>
+        <Button Content="Новый рецепт" HorizontalAlignment="Left" Height="40" Margin="18,194,0,0" VerticalAlignment="Top" Width="153" Click="NewRecipe"/>
+        <Button Content="Вывод рецепта" HorizontalAlignment="Left" Margin="18,239,0,0" VerticalAlignment="Top" Width="153" Height="40" Click="ShowInfo"/>
+        <TextBox x:Name="infoTB" HorizontalAlignment="Left" Height="278" Margin="356,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="244"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="278" Margin="183,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="168"/>
+        <Label Content="Номер ингредиента" HorizontalAlignment="Left" Margin="190,17,0,0" VerticalAlignment="Top" Width="153"/>
+        <TextBox x:Name="ingrNum" HorizontalAlignment="Left" Height="30" Margin="190,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153" Text="1" FontSize="20"/>
+        <TextBox x:Name="ingrWeightToChange" HorizontalAlignment="Left" Height="30" Margin="190,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153" Text="100" FontSize="20"/>
+        <Label Content="Вес ингредиента" HorizontalAlignment="Left" Margin="190,83,0,0" VerticalAlignment="Top" Width="153"/>
+        <Button Content="Изменить" HorizontalAlignment="Left" Margin="190,149,0,0" VerticalAlignment="Top" Width="153" Height="40" Click="ChangeIngridient"/>
+    </Grid>
+</Window>

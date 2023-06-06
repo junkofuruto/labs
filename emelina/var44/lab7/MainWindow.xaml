@@ -1,0 +1,39 @@
+﻿<Window x:Class="lab5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="794.539">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="419"/>
+		</Grid.RowDefinitions>
+		<Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="399" Margin="010,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="253"/>
+		<Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="399" Margin="268,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="253"/>
+		<Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="399" Margin="526,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="253"/>
+		<Label Content="СООБЩЕНИЕ" HorizontalAlignment="Left" Height="42" Margin="54,10,0,0" VerticalAlignment="Top" Width="156" FontSize="24"/>
+		<Label Content="СИНОНИМ" HorizontalAlignment="Left" Height="42" Margin="331,10,0,0" VerticalAlignment="Top" Width="133" FontSize="24"/>
+		<Label Content="СЕКРЕТ" HorizontalAlignment="Left" Height="42" Margin="617,10,0,0" VerticalAlignment="Top" Width="89" FontSize="24"/>
+		<TextBox x:Name="firstMessageTB" HorizontalAlignment="Left" Height="75" Margin="22,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="229"/>
+		<TextBox x:Name="firstWordTB" HorizontalAlignment="Left" Height="35" Margin="281,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="229"/>
+		<TextBox x:Name="firstSecretTB" HorizontalAlignment="Left" Height="71" Margin="537,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="229"/>
+		<Button Content="РАССЧИТАТЬ" HorizontalAlignment="Left" Height="37" Margin="22,358,0,0" VerticalAlignment="Top" Width="229" Click="MessageBytes"/>
+		<Button Content="РАССЧИТАТЬ" HorizontalAlignment="Left" Height="37" Margin="281,358,0,0" VerticalAlignment="Top" Width="229" Click="WordBytes"/>
+		<Button Content="РАССЧИТАТЬ" HorizontalAlignment="Left" Height="37" Margin="537,358,0,0" VerticalAlignment="Top" Width="229" Click="SecretBytes"/>
+		<TextBox x:Name="firstWordSynonymTB" HorizontalAlignment="Left" Height="35" Margin="281,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="229"/>
+		<TextBox x:Name="secondMessageTB" HorizontalAlignment="Left" Height="75" Margin="22,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="229"/>
+		<TextBox x:Name="secondWordTB" HorizontalAlignment="Left" Height="35" Margin="281,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="229"/>
+		<TextBox x:Name="secondWordSynonymTB" HorizontalAlignment="Left" Height="35" Margin="281,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="229"/>
+		<TextBox x:Name="secondSecretTB" HorizontalAlignment="Left" Height="71" Margin="537,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="229"/>
+		<TextBox x:Name="firstSecretLevelTB" HorizontalAlignment="Left" Height="39" Margin="537,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Text="0" TextAlignment="Center" FontSize="26" IsEnabled="False"/>
+		<Button x:Name="firstSecretLevelAdd" Content="+" HorizontalAlignment="Left" Height="38" Margin="648,129,0,0" VerticalAlignment="Top" Width="53" Click="FirstSecretLevelAdd"/>
+		<Button x:Name="firstSecretLevelMin" Content="-" HorizontalAlignment="Left" Height="38" Margin="706,129,0,0" VerticalAlignment="Top" Width="58" Click="FirstSecretLevelMin"/>
+		<TextBox x:Name="secondSecretLevelTB" HorizontalAlignment="Left" Height="39" Margin="537,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="106" Text="0" TextAlignment="Center" FontSize="26" IsEnabled="False"/>
+		<Button x:Name="secondSecretLevelAdd" Content="+" HorizontalAlignment="Left" Height="38" Margin="648,248,0,0" VerticalAlignment="Top" Width="53" Click="SecondSecretLevelAdd"/>
+		<Button x:Name="secondSecretLevelMin" Content="-" HorizontalAlignment="Left" Height="38" Margin="706,248,0,0" VerticalAlignment="Top" Width="58" Click="SecondSecretLevelMin"/>
+
+
+	</Grid>
+</Window>

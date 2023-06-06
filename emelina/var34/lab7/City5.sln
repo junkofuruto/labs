@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "City5", "City5.csproj", "{422C4349-01BC-4C4F-9451-4555350410DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityLib", "..\CityLib\CityLib.csproj", "{69463A85-717C-49AF-8337-7EC32377C75E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{422C4349-01BC-4C4F-9451-4555350410DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{422C4349-01BC-4C4F-9451-4555350410DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{422C4349-01BC-4C4F-9451-4555350410DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{422C4349-01BC-4C4F-9451-4555350410DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69463A85-717C-49AF-8337-7EC32377C75E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69463A85-717C-49AF-8337-7EC32377C75E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69463A85-717C-49AF-8337-7EC32377C75E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69463A85-717C-49AF-8337-7EC32377C75E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9D9E5B8-9756-424B-A144-CA4726FAE441}
+	EndGlobalSection
+EndGlobal

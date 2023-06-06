@@ -1,0 +1,73 @@
+﻿<Window x:Class="lab37_6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab37_6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="317.942">
+    <Grid x:Name="bg">
+        <Grid x:Name="alienForm" Margin="10,37,20,10" Visibility="Hidden">
+            <Label Content="Название" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="260"/>
+            <TextBox x:Name="alienName" HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260"/>
+            <Label Content="Планета" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" Width="260"/>
+            <TextBox x:Name="alienPlanet" HorizontalAlignment="Left" Height="23" Margin="10,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260"/>
+            <Label Content="Минимальный рост" HorizontalAlignment="Left" Margin="10,113,0,0" VerticalAlignment="Top" Width="260"/>
+            <TextBox x:Name="alienMinHeight" HorizontalAlignment="Left" Height="23" Margin="10,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260"/>
+            <Label Content="Максимальный рост" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top" Width="260"/>
+            <TextBox x:Name="alienMaxHeight" HorizontalAlignment="Left" Height="23" Margin="10,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260"/>
+            <Label Content="Текущий рост" HorizontalAlignment="Left" Margin="10,210,0,0" VerticalAlignment="Top" Width="260"/>
+            <TextBox x:Name="alienNowHeight" HorizontalAlignment="Left" Height="23" Margin="10,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260"/>
+            <Button Content="Вывод" HorizontalAlignment="Left" Margin="10,328,0,0" VerticalAlignment="Top" Width="260" Height="34" Click="AlienInfo"/>
+        </Grid>
+        <Grid x:Name="humanoidForm" Margin="10,37,20,10" Visibility="Hidden">
+            <Label Content="Название" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="260"/>
+            <TextBox x:Name="humanoidName" HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260"/>
+            <Label Content="Планета" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" Width="260"/>
+            <TextBox x:Name="humanoidPlanet" HorizontalAlignment="Left" Height="23" Margin="10,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260"/>
+            <Label Content="Минимальный рост" HorizontalAlignment="Left" Margin="10,113,0,0" VerticalAlignment="Top" Width="260"/>
+            <TextBox x:Name="humanoidMinHeight" HorizontalAlignment="Left" Height="23" Margin="10,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260"/>
+            <Label Content="Максимальный рост" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top" Width="260"/>
+            <TextBox x:Name="humanoidMaxHeight" HorizontalAlignment="Left" Height="23" Margin="10,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260"/>
+            <Label Content="Текущий рост" HorizontalAlignment="Left" Margin="10,210,0,0" VerticalAlignment="Top" Width="260"/>
+            <TextBox x:Name="humanoidNowHeight" HorizontalAlignment="Left" Height="23" Margin="10,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260"/>
+            <Button Content="Вывод" HorizontalAlignment="Left" Margin="10,328,0,0" VerticalAlignment="Top" Width="260" Height="34" Click="HumanoidInfo"/>
+            <Label Content="Вес" HorizontalAlignment="Left" Margin="10,262,0,0" VerticalAlignment="Top" Width="260"/>
+            <TextBox x:Name="humanoidWeight" HorizontalAlignment="Left" Height="23" Margin="10,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260"/>
+        </Grid>
+        <Grid x:Name="reptiloidForm" Margin="10,37,20,10">
+            <Label Content="Название" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="260"/>
+            <TextBox x:Name="reptiloidName" HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260"/>
+            <Label Content="Планета" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" Width="260"/>
+            <TextBox x:Name="reptiloidPlanet" HorizontalAlignment="Left" Height="23" Margin="10,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260"/>
+            <Label Content="Минимальный рост" HorizontalAlignment="Left" Margin="10,113,0,0" VerticalAlignment="Top" Width="260"/>
+            <TextBox x:Name="reptiloidMinHeight" HorizontalAlignment="Left" Height="23" Margin="10,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260"/>
+            <Label Content="Максимальный рост" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top" Width="260"/>
+            <TextBox x:Name="reptiloidMaxHeight" HorizontalAlignment="Left" Height="23" Margin="10,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260"/>
+            <Label Content="Текущий рост" HorizontalAlignment="Left" Margin="10,210,0,0" VerticalAlignment="Top" Width="260"/>
+            <TextBox x:Name="reptiloidNowHeight" HorizontalAlignment="Left" Height="23" Margin="10,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260"/>
+            <Button Content="Вывод" HorizontalAlignment="Left" Margin="10,328,0,0" VerticalAlignment="Top" Width="260" Height="34" Click="ReptiloidInfo"/>
+            <Label Content="Кол-во хвостов" HorizontalAlignment="Left" Margin="10,258,0,0" VerticalAlignment="Top" Width="260"/>
+            <TextBox x:Name="reptiloidTailCount" HorizontalAlignment="Left" Height="23" Margin="10,284,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260"/>
+        </Grid>
+
+        <ComboBox x:Name="themeCB" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="90" SelectedIndex="0" SelectionChanged="themeCB_SelectionChanged">
+            <Label Content="Светлая"/>
+            <Label Content="Темная"/>
+            <Label Content="Зеленая"/>
+        </ComboBox>
+        <ComboBox x:Name="classCB" HorizontalAlignment="Left" Margin="105,10,0,0" VerticalAlignment="Top" Width="90" SelectedIndex="1" SelectionChanged="typeCB_SelectionChanged">
+            <Label Content="Alien"/>
+            <Label Content="Humanoid"/>
+            <Label Content="Reptiloid"/>
+        </ComboBox>
+        <ComboBox x:Name="typeCB" HorizontalAlignment="Left" Margin="200,10,0,0" VerticalAlignment="Top" Width="90" SelectedIndex="0" SelectionChanged="themeCB_SelectionChanged">
+            <Label Content="Племенная"/>
+            <Label Content="Планетарная"/>
+            <Label Content="Межпланетная"/>
+            <Label Content="Межзвездная"/>
+            <Label Content="Межгалактическая"/>
+        </ComboBox>
+
+    </Grid>
+</Window>

@@ -1,0 +1,28 @@
+﻿<Window x:Class="EX3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EX3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="203" Width="376">
+    <Grid>
+        <Label Content="Создание файла" FontFamily="Consolas" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="121,0,0,0"/>
+        <TextBox x:Name="NumbersTextBox" FontFamily="Consolas" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5 30 0 0" Width="300" FontSize="11"/>
+        <Button FontFamily="Consolas" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="310,30,0,0" 
+                Height="15" Width="30" Content="Случ" FontSize="11" Click="GenerateRandomNumbersAction"/>
+        <Button FontFamily="Consolas" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,50,0,0"
+                Height="20" Width="335" Content="Сохранить" FontSize="11" Click="SaveDataToFileAction"/>
+        <TextBox x:Name="EvenPathTextBox" FontFamily="Consolas" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,117,0,0" Width="300" FontSize="11"/>
+        <Button FontFamily="Consolas" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="310,117,0,0" 
+                Height="15" Width="30" Content="Четн" FontSize="11" Click="SelectEvenFileAction"/>
+        <TextBox x:Name="NegativePathTextBox" FontFamily="Consolas" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,137,0,0" Width="300" FontSize="11"/>
+        <Button FontFamily="Consolas" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="310,137,0,0" 
+                Height="15" Width="30" Content="Нег" FontSize="11" Click="SelectNegativeFileAction"/>
+        <Button FontFamily="Consolas" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,157,0,0"
+                Height="20" Width="335" Content="Разделить" FontSize="11" Click="SplitToFilesAction"/>
+        <TextBox x:Name="InputFilePathTextBox" FontFamily="Consolas" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,97,0,0" Width="300" FontSize="11"/>
+        <Button FontFamily="Consolas" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="310,97,0,0" 
+            Height="15" Width="30" Content="Вх" FontSize="11" Click="SelectInputFileAction"/>
+    </Grid>
+</Window>

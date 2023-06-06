@@ -1,0 +1,15 @@
+﻿<Window x:Class="EX5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EX5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="457" Width="336">
+    <Grid>
+        <TextBox x:Name="TextLinesTextBox" VerticalAlignment="Top" HorizontalAlignment="Stretch"
+                 FontSize="11" Margin="10,35,10,10" Height="389" TextWrapping="Wrap"/>
+        <Button VerticalAlignment="Top" HorizontalAlignment="Stretch" Height="20" Content="Выбор файла" 
+                FontSize="11" Margin="10,10,10,10" Click="SelectFileAction"/>
+    </Grid>
+</Window>
